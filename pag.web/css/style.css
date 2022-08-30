@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sans-serif, 'Courier New', Courier, monospace;
+
+}
+
+#grilla {
+    background-color: lightcoral;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+                         "subheader"
+                         "text"
+                         "footer";
+}
+
+body {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/fondo.webp);
+    background-size: cover;
+}
+
+
+#header {
+    background-color: black;
+    padding: 20px;
+    border: 2px solid orange;
+    position: relative;
+    border: 0ch;
+    padding: 70px;
+    grid-area: header;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    border: 2px solid orange;
+}
+
+.logo {
+    vertical-align: top;
+}
+
+.header__title {
+    font-family: cursive;
+    color: white;
+    font-size: 60px;
+}
+#text {
+    margin: 10px;
+    grid-area: text;
+}
+.title {
+    background-color: gray;
+}
+
+.navbar {
+    font-size: 20px;
+    color: white;
+}
+
+.navbar__item {
+    display: inline-block;
+}
+
+.navbar__item a {
+    text-decoration: none;
+    color: white;
+    text-decoration: underline;
+}
+
+#footer {
+    background-color: aliceblue;
+    border: 2px solid black;
+    height: 30px;
+    grid-area: footer;
+}
+
+.div__TyC {
+    border: 2px solid black;
+    background-color: lightslategray;
+}
+
+legend {
+    text-decoration: underline 2px;
+    font-size: 20px;
+}
+
+#contactoSpan {
+    width: 200px;
+    padding-left: 0px;
+    padding-right: 20px;
+    margin-right: 0px;
+    border: 2px solid black;
+}
+
+main {
+    width: 255px;
+    border: 2px solid black;
+}
+
+.mainMansiones {
+    width: 1000px;
+    border: 2px solid black;
+}
+
+section {
+    border: 2px solid black;
+}
+
+.mainCabañas {
+    width: 1000px;
+    border: 2px solid black;
+
+}
+
+#subheader {
+    grid-area: subheader;
+    font-size: 35px;
+}
+
+p {
+    font-size: 25px;
+}
+
+.footerTyC {
+    background-color: aliceblue;
+    border: 2px solid black;
+    height: 30px;
+    text-align: left;
+    position: absolute;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1200px){
+    
+}
+@media only screen and (max-width: 480px){
+    
+}
+
+/*
+ posicion relativa
+
+ .header__container{
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+    }   
+    .header{
+    background-color: black;
+    padding: 20px;
+    border: 2px solid orange;
+    position: relative;
+    }
+
+
+    **/
