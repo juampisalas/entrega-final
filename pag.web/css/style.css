@@ -10,12 +10,13 @@
     background-color: lightcoral;
     height: 100vh;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr;
     grid-template-areas: "header"
-                         "subheader"
-                         "text"
-                         "footer";
+        "subheader"
+        "text"
+        "tabla"
+        "footer";
 }
 
 body {
@@ -36,6 +37,7 @@ body {
     padding: 70px;
     grid-area: header;
 }
+
 
 .header__container {
     display: flex;
@@ -60,10 +62,12 @@ body {
     color: white;
     font-size: 60px;
 }
+
 #text {
     margin: 10px;
     grid-area: text;
 }
+
 .title {
     background-color: gray;
 }
@@ -149,11 +153,63 @@ p {
     width: 100%;
 }
 
-@media only screen and (max-width: 1200px){
-    
+.videoContainer {
+    display: flex;
 }
-@media only screen and (max-width: 480px){
-    
+
+
+.tabla {
+    background-color: aquamarine;
+}
+
+@media only screen and (max-width: 1200px) {
+    .videoContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    iframe {
+        width: 300px;
+    }
+
+    .imageCasaMar {
+        width: 300px;
+        height: 150;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .header__title {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .videoContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    iframe {
+        width: 150px;
+    }
+
+    .imageCasaMar {
+        width: 150px;
+        height: 90;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .header__title {
+        font-size: 15px;
+    }
 }
 
 /*

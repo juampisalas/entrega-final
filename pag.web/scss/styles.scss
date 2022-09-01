@@ -1,0 +1,45 @@
+.imageCasaMarContainer {
+    width: 558px;
+    height: 315px;
+}
+
+.imageCasaMar {
+    width: 558px;
+    height: 315px;
+    background: url('../images/cabaña2.jpeg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+
+    &.active {
+        animation: flip 1500ms linear forwards;
+    }
+
+    &::before {
+        content: 'Con Viajes Top podras vivir una experiencia unica, en una casa en el mar.';
+        transform: scaleX(-1);
+        color: white;
+    }
+}
+
+
+
+@keyframes flip {
+    50% {
+        background: url('../images/cabaña2.jpeg');
+        font-size: 0;
+    }
+
+    51% {
+        font-size: 20px;
+        background: black;
+    }
+
+    100% {
+        background: black;
+        font-size: 20px;
+        transform: scaleX(-1);
+    }
+
+}
