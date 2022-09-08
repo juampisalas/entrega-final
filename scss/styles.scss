@@ -1,11 +1,13 @@
+@import "_variables.scss";
+
 .imageCasaMarContainer {
-    width: 558px;
-    height: 315px;
+    width: $img-width;
+    height: $img-height;
 }
 
 .imageCasaMar {
-    width: 558px;
-    height: 315px;
+    width: $img-width;
+    height: $img-height;
     background: url('../images/cabaña2.jpeg');
     display: flex;
     justify-content: center;
