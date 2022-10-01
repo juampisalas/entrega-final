@@ -1,2 +1,8 @@
 $img-width: 558px;
 $img-height: 315px;
+
+//mixins
+@mixin sizes($width,$height){
+    height: $height;
+    width: $width;
+}
