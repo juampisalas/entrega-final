@@ -7,7 +7,7 @@
 }
 
 #grilla {
-    background-color: lightcoral;
+    background-color: white;
     height: 100vh;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -19,7 +19,7 @@
         "footer";
 }
 
-body {
+.body {
     background-color: black;
     width: 100%;
     height: 100%;
@@ -96,7 +96,6 @@ body {
 
 .div__TyC {
     border: 2px solid black;
-    background-color: lightslategray;
 }
 
 legend {
@@ -139,18 +138,16 @@ section {
 
 p {
     font-size: 25px;
+    margin-bottom: 0;
 }
 
 .footerTyC {
-    background-color: aliceblue;
     border: 2px solid black;
-    height: 30px;
     text-align: left;
     position: absolute;
     text-align: left;
     position: absolute;
     bottom: 0;
-    width: 100%;
 }
 
 .videoContainer {
