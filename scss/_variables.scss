@@ -6,3 +6,10 @@ $img-height: 315px;
     height: $height;
     width: $width;
 }
+
+$redes:(
+    twitter:#46f8fc,
+    youtube:#e60000,
+    instagram:linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(230,0,0,1) 100%),
+    facebook:#0300e6
+);

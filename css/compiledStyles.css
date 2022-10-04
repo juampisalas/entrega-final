@@ -37,7 +37,7 @@
   height: 30px;
   width: 100%; }
 
-.button, .button--contacto {
+.button, .button--contacto, .button--twitter, .button--youtube, .button--instagram, .button--facebook {
   padding: 10px;
   color: aliceblue;
   text-decoration: none;
@@ -64,3 +64,15 @@
   align-items: center;
   justify-content: center;
   padding: 20px; }
+
+.button--twitter {
+  background: #46f8fc; }
+
+.button--youtube {
+  background: #e60000; }
+
+.button--instagram {
+  background: linear-gradient(90deg, #3f5efb 0%, #e60000 100%); }
+
+.button--facebook {
+  background: #0300e6; }

@@ -88,3 +88,11 @@
     justify-content: center;
     padding: 20px;
 }
+
+@each $red, $background-color in $redes {
+    .button--#{$red}{
+        @extend .button;
+        background: $background-color;
+    }
+    
+}
