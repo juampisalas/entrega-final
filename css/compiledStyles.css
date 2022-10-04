@@ -37,7 +37,7 @@
   height: 30px;
   width: 100%; }
 
-.button {
+.button, .button--contacto {
   padding: 10px;
   color: aliceblue;
   text-decoration: none;
@@ -46,6 +46,11 @@
   margin-right: 1em;
   border-radius: 40px;
   font-size: 20px; }
+
+.button--contacto {
+  background-color: antiquewhite;
+  padding: 5px;
+  color: black; }
 
 #headerTyC {
   font-size: 50px; }
